@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test heheheh ødelagger</title>
+    <script src="t0script.js" defer></script>
+</head>
+<body>
+    <audio id="audio" src="1.mp3" autoplay></audio>
+
+    <h1>HEHEHEHEHEHEHEHEHEHHEHEEHHEEHEHEHEHEHEHEHEHEHEEHEHE
+    HEHEHEHEHEHEHEheEHEHEHEHEHEHHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEEHEHEH</h1>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+
+  var popupUrls = [
+    'https://rickroll.it/rickroll.mp4',
+    'https://piv.pivpiv.dk/',
+      'https://www.youtube.com/watch?v=r5_NvFTfAWc'
+  
+  ];
+
+ 
+  setInterval(function() {
+    var randomUrlIndex = Math.floor(Math.random() * popupUrls.length);
+      
+    var randomLeft = Math.floor(Math.random() * (window.innerWidth - 600)); 
+    var randomTop = Math.floor(Math.random() * (window.innerHeight - 400)); 
+    openPopup(popupUrls[randomUrlIndex], randomLeft, randomTop);
+  }, 0300); 
+});
+
+function openPopup(url, left, top) {
+ 
+  var specs = "width=600,height=400,top=" + top + ",left=" + left;
+
+  window.open(url, "_blank", specs);
+}
+</script>
+    
+</body>
+    
+</html>
